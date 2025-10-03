@@ -118,5 +118,13 @@
     {
         "nid": "MEND",
         "expression": "MAG + 20"
+    },
+    {
+        "nid": "DOUBLE_HIT",
+        "expression": "2 * (SKL*2 + LCK//2)"
+    },
+    {
+        "nid": "HALF_HIT",
+        "expression": "(SKL*2 + LCK//2) // 2"
     }
 ]

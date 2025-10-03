@@ -1792,6 +1792,72 @@
         ]
     },
     {
+        "nid": "Corona",
+        "name": "Corona",
+        "desc": "Proc.: Skl/2%\nReduces target's resistance to 0. Halves the target's hit rate on hit for one turn.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            6,
+            5
+        ],
+        "components": [
+            [
+                "proc_rate",
+                "CRIT_HIT"
+            ],
+            [
+                "attack_proc",
+                "Corona_Proc"
+            ],
+            [
+                "nihil",
+                [
+                    "Nihil"
+                ]
+            ]
+        ]
+    },
+    {
+        "nid": "Corona_Proc",
+        "name": "Corona",
+        "desc": "Reduces target's resistance to 0. Halves the target's hit rate on hit for one turn.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            6,
+            5
+        ],
+        "components": [
+            [
+                "item_override",
+                "Luna_Proc"
+            ],
+            [
+                "give_status_after_hit",
+                "Corona_Status"
+            ]
+        ]
+    },
+    {
+        "nid": "Corona_Status",
+        "name": "Half Hit",
+        "desc": "Hit rate halved.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            4,
+            0
+        ],
+        "components": [
+            [
+                "alternate_accuracy_formula",
+                "HALF_HIT"
+            ],
+            [
+                "lost_on_upkeep",
+                null
+            ]
+        ]
+    },
+    {
         "nid": "Daunt",
         "name": "Daunt",
         "desc": "Inflicts Hit/Crit -5 to enemies within 3 spaces of the unit.",
@@ -1832,6 +1898,98 @@
             [
                 "crit",
                 -5
+            ]
+        ]
+    },
+    {
+        "nid": "Deadeye",
+        "name": "Deadeye",
+        "desc": "Doubles hit rate.\nProc.: Skl/2%\nPuts foe to sleep.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            9,
+            6
+        ],
+        "components": [
+            [
+                "proc_rate",
+                "CRIT_HIT"
+            ],
+            [
+                "attack_proc",
+                "Deadeye_Proc"
+            ],
+            [
+                "nihil",
+                [
+                    "Nihil"
+                ]
+            ],
+            [
+                "alternate_accuracy_formula",
+                "DOUBLE_HIT"
+            ]
+        ]
+    },
+    {
+        "nid": "Deadeye_Proc",
+        "name": "Deadeye",
+        "desc": "Doubles hit rate.\nProc.: Skl/2%\nPuts foe to sleep.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            9,
+            6
+        ],
+        "components": [
+            [
+                "give_status_after_hit",
+                "Sleep"
+            ]
+        ]
+    },
+    {
+        "nid": "Flare",
+        "name": "Flare",
+        "desc": "Proc.: Skl/2%\nReduces foe's resistance to 0 and restores HP equal to half damage dealt.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            4,
+            2
+        ],
+        "components": [
+            [
+                "proc_rate",
+                "CRIT_HIT"
+            ],
+            [
+                "attack_proc",
+                "Sol_Proc"
+            ],
+            [
+                "nihil",
+                [
+                    "Nihil"
+                ]
+            ]
+        ]
+    },
+    {
+        "nid": "Flare_Proc",
+        "name": "Flare",
+        "desc": "Reduces foe's resistance to 0 and restores HP equal to half damage dealt.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            4,
+            2
+        ],
+        "components": [
+            [
+                "lifelink",
+                0.5
+            ],
+            [
+                "item_override",
+                "Luna_Proc"
             ]
         ]
     },
@@ -1883,22 +2041,6 @@
                         0.5
                     ]
                 ]
-            ]
-        ]
-    },
-    {
-        "nid": "Fortune",
-        "name": "Fortune",
-        "desc": "Negates critical hits.",
-        "icon_nid": "Skills",
-        "icon_index": [
-            4,
-            2
-        ],
-        "components": [
-            [
-                "crit_avoid",
-                1000
             ]
         ]
     },
@@ -2028,12 +2170,12 @@
         "components": [
             [
                 "give_status_after_attack",
-                "Guard_Child"
+                "Guard_Effect"
             ]
         ]
     },
     {
-        "nid": "Guard_Child",
+        "nid": "Guard_Effect",
         "name": "Guard",
         "desc": "Prevent target from counterattacking.",
         "icon_nid": "Skills",
@@ -2152,7 +2294,7 @@
     {
         "nid": "Lumina",
         "name": "Lumina",
-        "desc": "Allows user to wield Light magic. (Note: Unit will also need to have their WEXP set to over 0 to use E rank and above Light magic.)",
+        "desc": "Allows user to wield Light magic. (Note: Unit will also need to have their WEXP set to at least 1 to use Light magic that is E rank and above.)",
         "icon_nid": "Skills",
         "icon_index": [
             4,
@@ -2602,6 +2744,48 @@
             [
                 "lifelink",
                 0.5
+            ]
+        ]
+    },
+    {
+        "nid": "Stun",
+        "name": "Stun",
+        "desc": "Proc.: Skl/2%\nStuns the target.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            4,
+            6
+        ],
+        "components": [
+            [
+                "proc_rate",
+                "CRIT_HIT"
+            ],
+            [
+                "attack_proc",
+                "Stun_Proc"
+            ],
+            [
+                "nihil",
+                [
+                    "Nihil"
+                ]
+            ]
+        ]
+    },
+    {
+        "nid": "Stun_Proc",
+        "name": "Stun",
+        "desc": "Stuns the target.",
+        "icon_nid": "Skills",
+        "icon_index": [
+            4,
+            6
+        ],
+        "components": [
+            [
+                "give_status_after_hit",
+                "Stunned"
             ]
         ]
     },

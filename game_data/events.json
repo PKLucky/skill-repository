@@ -10,6 +10,7 @@
         "_source": [
             "# The following skills are not in this repository:",
             "# Aether (Path of Radiance/Radiant Dawn): Proc. Skill - Unit attacks twice. First attack has Sol and second attack has Luna.",
+            "# Bane (Radiant Dawn/Engage): Proc. Skill - Reduces enemy's HP to 1.",
             "# Blessing (Path of Radiance/Radiant Dawn): Restores MAG amount of HP to adjacent allies at the start of each turn.",
             "# Blossom (Path of Radiance/Radiant Dawn): Halves EXP gain, but gives each stat that failed to increase on a level up a second chance to increase.",
             "# Boon (Path of Radiance/Radiant Dawn): At the start of each turn, removes negative status effects from adjacent allies.",
