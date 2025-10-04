@@ -1,39 +1,5 @@
 [
     {
-        "name": "INFORMATION",
-        "trigger": null,
-        "level_nid": "0",
-        "condition": "True",
-        "commands": [],
-        "only_once": false,
-        "priority": 20,
-        "_source": [
-            "# The following skills are not in this repository:",
-            "# Aether (Path of Radiance/Radiant Dawn): Proc. Skill - Unit attacks twice. First attack has Sol and second attack has Luna.",
-            "# Bane (Radiant Dawn/Engage): Proc. Skill - Reduces enemy's HP to 1.",
-            "# Blessing (Path of Radiance/Radiant Dawn): Restores MAG amount of HP to adjacent allies at the start of each turn.",
-            "# Blossom (Path of Radiance/Radiant Dawn): Halves EXP gain, but gives each stat that failed to increase on a level up a second chance to increase.",
-            "# Boon (Path of Radiance/Radiant Dawn): At the start of each turn, removes negative status effects from adjacent allies.",
-            "# Counter (Path of Radiance/Radiant Dawn): Proc. Skill - Target takes half the damage that the user took.",
-            "# Corrosion (Path of Radiance/Radiant Dawn: Proc. Skill - Target's weapon durability decreases by one more use.",
-            "# Disarm (Radiant Dawn): Proc. Skill - Forcibly unequips the foe's weapon.",
-            "# Discipline (Path of Radiance): Prevents user's combat skills from triggering.",
-            "# Howl (Radiant Dawn): Proc. Skill - Paralyzes a foe that uses an indirect attack.",
-            "# Imbue (Radiant Dawn): Restores MAG amount of HP at the start of each turn.",
-            "# Maelstrom (Radiant Dawn): Proc. Skill - Damages a foe that uses an indirect attack.",
-            "# Parity (Path of Radiance/Radiant Dawn): Negates all support bonuses, terrain bonuses, and combat skills on both user and foe.",
-            "# Quickclaw (Radiant Dawn): Proc. Skill - Damages a foe that uses an indirect attack.",
-            "# Serenity (Path of Radiance/Radiant Dawn): Halves biorhythm effects. (Not implemented due to biorhythm being a niche mechanic.)",
-            "# Shriek (Radiant Dawn): Proc. Skill - Negates foe's LCK if attacking indirectly.",
-            "# Tempest (Path of Radiance/Radiant Dawn): Doubles biorhythm effects. (Not implemented due to biorhythm being a niche mechanic.)",
-            "#####",
-            "# The following skills are only partially implemented:",
-            "# Mantle (Radiant Dawn) - Does NOT restore LCK amount of HP at the start of each turn.",
-            "# Sacrifice (Radiant Dawn) - Drains and restores a set amount of HP rather than dynamically draining and restoring based on the target's current HP."
-        ],
-        "nid": "0 INFORMATION"
-    },
-    {
         "name": "DeathSaar",
         "trigger": "combat_death",
         "level_nid": "5",
@@ -2898,5 +2864,18 @@
             "end"
         ],
         "nid": "DEBUG FoW Toggle"
+    },
+    {
+        "name": "New Event",
+        "trigger": null,
+        "level_nid": "0",
+        "condition": "True",
+        "commands": [],
+        "only_once": false,
+        "priority": 20,
+        "_source": [
+            ""
+        ],
+        "nid": "0 New Event"
     }
 ]

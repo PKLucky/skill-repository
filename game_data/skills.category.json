@@ -26,6 +26,8 @@
     "Guard": "Non Default Project Skills",
     "Guard_Effect": "Non Default Project Skills",
     "Guard_Proc": "Non Default Project Skills",
+    "HealingDescant": "Non Default Project Skills",
+    "HealingDescant_Child": "Non Default Project Skills",
     "Impale": "Non Default Project Skills",
     "Impale_Proc": "Non Default Project Skills",
     "Impenetrable": "Non Default Project Skills",
@@ -57,6 +59,7 @@
     "Stun_Proc": "Non Default Project Skills",
     "Vantage": "Non Default Project Skills",
     "Vigilance": "Non Default Project Skills",
+    "VowofFriendship": "Non Default Project Skills",
     "White_Pool": "Non Default Project Skills",
     "White_Pool_Child": "Non Default Project Skills",
     "Wrath": "Non Default Project Skills"
